@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<title>Criar conta</title>
+<link rel="stylesheet" type="text/css" href="css/estilos.css">
+<meta charset="utf-8">
+</head>
+<body>
+		<section id="linha">
+	</section>
+	<header>
+		<nav class="barra-inicio">
+			
+				
+		<a href="index.html"> <img src="imagens/logo0.png" id="logo" ></a>
+		<div class="dev-menu">
+				<div id="divBusca">
+  					<img src="imagens/search3.png" height="32" alt="Buscar..."/>
+  					<input type="search" id="txtBusca" placeholder="Buscar..."/>
+  					<button id="btnBusca">Buscar</button>
+  					
+				</div>
+		
+		    <ul>
+			<li><a href="anunciar.html">Anunciar</a></li>
+			<li><a href="Minhaconta.html">Minha Conta</a></li>
+		</ul>
+		</div>	
+	</nav>
+</header>
+	<div id="tudo">
+
+<div id="cadastrar-se">
+	<p id="Preencha">Preencha o formulario abaixo para se inscrever:</p>
+	<form class="cadastrar-form" name="criar_form">
+		Digite seu E-mail:
+		<input type="text" placeholder=" Digite seu E-mail:" id="campo-login" name="email">
+		
+		Digite novamente:
+		<input type="text" placeholder=" Digitenovamente seu E-mail" id="campo-login" name="email_nov">
+		
+		Digite seu numero de telefone:
+		<input type="text" placeholder=" Digite o seu número de telefone" id="campo-login" name="telefone">
+		
+		Digite novamente:
+		<input type="text" placeholder=" Digite seu número de telefone novamente" id="campo-login"  name="telefone_nov">
+		
+		Digite seu CPF:
+		<input type="text" placeholder=" Digite seu CPF" id="campo-login"  name="CPF">
+		
+		Digite a data do seu nascimento:
+		<input type="data" placeholder=" DD/MM/AA" max="06-06-2001" id="data"  name="data">
+
+		Seu Sexo:<br>
+		 <input type="radio" name="gender" value="Masculino"> Masculino<br>
+  		 <input type="radio" name="gender" value="Feminino"> Feminino<br>
+  		 <input type="radio" name="gender" value="Outro"> Outro<br>  
+
+
+		Digite o nome de sua mãe:
+		<input type="text" placeholder=" Digite o nome de sua mãe" id="campo-login">
+		
+		Endereço:		
+		<input type="text" placeholder=" Digite seu Endereço" id="campo-login">
+		
+		Bairro:
+		<input type="text" placeholder=" Bairro" id="campo-login">
+		
+		Estado:
+		<input type="text" placeholder=" Bairro" id="campo-login">
+
+
+		Crie uma senha forte:
+		<input type="" placeholder=" Crie uma senha Forte" id="Senha" name="senha">
+		Digite a senha novamente:
+		
+		<input type="" placeholder=" Digite a senha novamente" id="Senha" name="senha_nov">
+		<br>
+
+		<a href="#" id="a-botao-cadastrar"><input type="submit" name="Cadastrar" id="botao-cadastrar" onclick="criaruser()"></a>
+	</form>
+</div>	
+</div>
+	<footer class="rodape">
+		<script type="text/javascript" src="js/javas.js"></script>
+		<ul class="ul-rodape">
+			<li class="lirodape"><a href="#">Sobre a T.P.S</a></li>
+			<li class="lirodape"><a href="#">Contato</a></li>
+			<li class="lirodape"><a href="#">Sua Opinião</a></li>
+		</ul>	
+	</footer>
+
+
+</body>
+</html>

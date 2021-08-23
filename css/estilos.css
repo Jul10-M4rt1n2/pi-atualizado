@@ -1,0 +1,474 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: "Ionicons";
+  src: url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.eot?v=2.0.1");
+  src: url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.eot?v=2.0.1#iefix")
+      format("embedded-opentype"),
+    url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.ttf?v=2.0.1")
+      format("truetype"),
+    url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.woff?v=2.0.1")
+      format("woff"),
+    url("https://code.ionicframework.com/ionicons/2.0.1/fonts/ionicons.svg?v=2.0.1#Ionicons")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+section {
+  padding: 50px 0;
+}
+
+h1,
+h2 {
+  font-weight: 200;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-family: arial, sans-serif;
+  text-align: center;
+}
+
+h2 {
+  font-size: 180%;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.mapa {
+  background-color: #f09c67;
+}
+
+h1:after {
+  content: "";
+  display: block;
+  background-color: #f09c67;
+  width: 100px;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+h2:after {
+  content: "";
+  display: block;
+  background-color: #b4734a;
+  width: 100px;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+header {
+  background-color: #f09c67;
+}
+
+.row {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.div.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu-bar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px 0px 10px 15px;
+  box-sizing: border-box;
+}
+
+.barra-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.barra-inicio {
+  height: 100px;
+  top: 0;
+  width: 100%;
+  display: flex;
+  padding: 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  align-items: center;
+}
+
+#logo {
+  width: 100px;
+  height: 100px;
+  margin-left: 15px;
+  margin-top: 1px;
+}
+
+#menu {
+  width: 100%;
+  height: 250px;
+  background-color: #eeeeee;
+}
+
+#divBusca {
+  width: 450px;
+  height: 32px;
+  margin: 0 auto;
+}
+
+#divBusca input {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.search-box {
+  position: relative;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.search-box input {
+  font-size: 110%;
+  width: 100%;
+  line-height: 22px;
+  padding: 15px 50px;
+  border: 0;
+  color: rgb(26, 26, 26);
+  border-radius: 6px;
+  outline: 0;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.08), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+}
+
+.search-box input::placeholder {
+  color: #ced4df;
+}
+
+.search-box::before {
+  font-family: "Ionicons";
+  content: "\f4a5";
+  color: #ced4df;
+  position: absolute;
+  font-size: 140%;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+#txtBusca {
+  display: inline-block;
+  background-color: transparent;
+  padding: 20px 50px;
+  font-size: 18px;
+  border: none;
+  height: 32px;
+  width: 340px;
+}
+
+#btnBusca {
+  border: none;
+  float: right;
+  height: 32px;
+  border-radius: 0 8px 8px 0;
+  width: 73px;
+  font-weight: bold;
+  background: #ff8c00;
+}
+
+#divBusca img {
+  float: left;
+  display: flex;
+}
+
+#tudo {
+  width: 100%;
+  margin: auto;
+  border: none;
+}
+
+ul {
+  display: inline;
+  position: center;
+}
+
+ul li {
+  display: inline-block;
+  padding: 15px 15px;
+  background-color: #fff;
+  border-radius: 6px;
+  margin-left: 15px;
+  transition: background-color 0.2s;
+}
+
+ul li a {
+  font-size: 110%;
+  text-decoration: none;
+  font-family: arial;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(66, 66, 66);
+}
+
+.opcoes-de-trabalho {
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.03);
+  margin-bottom: 30px;
+}
+
+.icones {
+  width: 64px;
+  height: 64px;
+}
+
+.opcoes-de-trabalho ul {
+  margin: 20px 0;
+  display: inline-block;
+}
+
+.opcoes-de-trabalho ul li img {
+  display: block;
+  margin: 0 auto;
+}
+
+.quadro-de-anuncios {
+  width: 80%;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.anuncios-dados {
+  width: 22%;
+  height: 300px;
+  margin: 12px;
+  padding: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  transition: box-shadow 0.2s;
+}
+
+.anuncios-dados:hover {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1), 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.localizacao {
+  width: 100%;
+  height: 500px;
+}
+
+.rodape {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+  height: 100px;
+  margin: 0px;
+}
+
+.link-rodape {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #1a1a1a;
+  padding: 10px 10px;
+  border-radius: 6px;
+  text-transform: uppercase;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.link-rodape:hover {
+  color: #fff;
+  background-color: #f09c67;
+}
+
+.ul-rodape {
+  display: inline-block;
+  height: 45px;
+
+  align-items: center;
+  margin: 15px;
+  margin-left: 30%;
+}
+
+.lirodape {
+  margin: 15px;
+}
+
+.botao {
+  margin: 5px;
+  padding: 10px 10px;
+  font-weight: 500;
+  border-radius: 6px;
+  background-color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.botao:hover,
+.botao:active {
+  color: #fff;
+  background-color: #ff8c00;
+  cursor: pointer;
+}
+
+#imganuncio {
+  width: 100%;
+  height: 180px;
+  border-radius: 4px;
+}
+
+.divbotao {
+  display: flex;
+  justify-content: center;
+}
+
+.nome-do-anuncio {
+  font-family: arial;
+  color: rgba(0, 0, 0, 0.6);
+  text-transform: uppercase;
+  padding: 10px 4px;
+  text-align: center;
+  width: 100%;
+  height: 50px;
+}
+
+.valor {
+  font-family: arial;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: 600;
+  display: inline-block;
+}
+
+ul li:hover,
+ul li:active {
+  color: #fff;
+  background-color: #ff8c00;
+}
+
+#criar-login {
+  font-size: 15px;
+  font-family: arial;
+  color: black;
+}
+
+#criar-login:active {
+  background-color: #ff9a35;
+  color: white;
+}
+
+#conta-cadastrada-ou-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px;
+  border-radius: 4px;
+}
+
+#opcao-da-conta {
+  font-size: 18px;
+  font-family: times new roman;
+  margin: auto;
+  padding: 15px;
+}
+
+.login-form {
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#formulario-da-conta {
+  width: 45%;
+}
+
+.dark {
+  color: #1a1a1a;
+}
+
+.login-form input {
+  font-size: 110%;
+  width: 100%;
+  line-height: 22px;
+  padding: 15px 50px;
+  border: 0;
+  color: rgb(26, 26, 26);
+  border-radius: 6px;
+  margin-bottom: 20px;
+  outline: 0;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.08), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+}
+
+#forgot {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: #1a1a1a;
+  text-transform: uppercase;
+  margin-top: -10px;
+}
+
+.form-descricao-do-anucio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-descricao-do-anucio input {
+  font-size: 110%;
+  width: 100%;
+  line-height: 22px;
+  padding: 15px 50px;
+  border: 0;
+  color: rgb(26, 26, 26);
+  border-radius: 6px;
+  margin-bottom: 20px;
+  outline: 0;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.08), 0 1px 3px 0 rgba(0, 0, 0, 0.08);
+}
+
+.foto {
+  border: 0 !important;
+  box-shadow: none !important;
+}
+
+.anuncio-form {
+  margin-top: 50px;
+}
+
+.no-margin {
+  margin-bottom: -30px !important;
+}
+
+.fotos {
+  margin: 5px;
+  padding: 10px 10px;
+  font-weight: 500;
+  border-radius: 6px;
+  background-color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  border: 1px solid #1a1a1a2a;
+  font-size: 80%;
+}
+
+.fotos:hover,
+.fotos:active {
+  color: #fff;
+  background-color: #ff8c00;
+  cursor: pointer;
+  border: 1px solid #ff8c00;
+}
